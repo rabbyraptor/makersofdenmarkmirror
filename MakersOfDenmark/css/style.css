@@ -45,7 +45,7 @@ nav {
 }
 nav ul {
   list-style: none;
-  margin: 0 -16px 0 0;
+  margin: 0 -10px 0 0;
   padding: 0;
 }
 nav ul li {
@@ -55,12 +55,12 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 15px;
+  padding: 0 12px;
   line-height: 70px;
   background: #24305e;
   color: #ffffff;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
 }
 nav ul li a:hover,
@@ -110,7 +110,7 @@ nav ul li ul li a {
 }
 #nav-toggle {
   position: absolute;
-  left: 18px;
+  left: 10px;
   top: 22px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
@@ -154,6 +154,69 @@ article {
   margin: 0 auto;
   padding: 100px 20px;
 }
+/* FAQ start her */
+.art-faq {
+  font-family: Montserrat;
+  font-size: 14px;
+}
+.faq1 {
+  float: right;
+  margin-top: 0px;
+  padding-left: 30px;
+  width: 180px;
+  height: 200px;
+  left: 50px;
+}
+.faq-h {
+  font-family: Montserrat;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 6em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.faq {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+.collapsible {
+  font-family: Montserrat;
+  font-size: 18px;
+  border: 1px #24305e;
+  border-style: solid;
+  margin: auto;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+}
+.active,
+.collapsible:hover {
+  background-color: #a8d0e6;
+}
+.collapsible:after {
+  content: "\002B";
+  color: #24305e;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.content {
+  font-family: Montserrat;
+  font-size: 14px;
+  border: 1px #24305e;
+  border-style: solid;
+  background-color: #ffffff;
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
 @media only screen and (max-width: 1000px) {
   /* Mobile footer */
   .sec-footer {
@@ -161,7 +224,7 @@ article {
   }
 }
 
-/*** footer start her ***/
+/* footer start her */
 footer {
   padding: 80px 20px;
   background-color: #f76c6c;
