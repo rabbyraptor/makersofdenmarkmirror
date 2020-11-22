@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MakersOfDenmark</title>
+    <link rel="icon" href="/img/Logo_RGB.svg" type="image/x-icon" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/aktiviteter.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"
+            ><img
+              src="/img/Logo_white.svg"
+              width="100"
+              height="70"
+              title="MakersOfDenmark"
+              alt=""
+          /></a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="/pages/vaerksted.html">VÆRKSTED</a>
+            </li>
+            <li>
+              <a href="/pages/aktiviteter.html">AKTIVITETER</a>
+            </li>
+            <li>
+              <a href="/pages/blog.html">BLOG</a>
+            </li>
+            <li>
+              <a href="/pages/forum.html">FORUM</a>
+            </li>
+            <li>
+              <a href="/pages/faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="/pages/faq.html">LOG IN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <article>
+      <div class="container">
+        <div class="left-column">
+          <h2>Filtrér</h2>
+          <input
+            type="checkbox"
+            id="filter-kursus-checkbox"
+            name="kursus"
+            value="Kursus"
+          />
+          <label for="kursus">Kursus</label>
+          <br />
+          <input
+            type="checkbox"
+            id="filter-foredrag-checkbox"
+            name="foredrag"
+            value="Foredrag"
+          />
+          <label for="foredrag">Foredrag</label>
+          <br />
+          <label for="maskintype">Maskintype:</label>
+          <br />
+          <select name="maskintype" id="filter-maskintype">
+            <option value="all">Alle</option>
+            <option value="lasercutter">Lasercutter</option>
+            <option value="3D-printer">3D-printer</option>
+          </select>
+          <br />
+          <label for="region">Region:</label>
+          <br />
+          <select name="region" id="filter-region">
+            <option value="all">Hele landet</option>
+            <option value="nordjylland">Nordjylland</option>
+            <option value="midtjylland">Midtjylland</option>
+            <option value="syddanmark">Syddanmark</option>
+            <option value="sjælland">Sjælland</option>
+            <option value="hovedstaden">Hovedstaden</option>
+          </select>
+        </div>
+        <div class="center-column">
+          <div class="activities-title">
+            <h2>Kommende aktiviteter</h2>
+            <span id="add-activity-button">+ Tilføj ny aktivitet</span>
+          </div>
+          <div class="activity">
+            <div
+              class="activity-image"
+              style="background-image: url('/img/aktiviteter/1.jpg')"
+            ></div>
+            <div class="activity-description">
+              <div class="activity-info">
+                <div class="activity-time">
+                  <span>27. november</span>
+                  <span>kl 16:00</span>
+                </div>
+                <div class="activity-title">
+                  <h3>Norwich Science Festival</h3>
+                </div>
+                <div class="activity-address">
+                  FabLab UCL, <br />
+                  Seebladsgade 1, 5000 Odense
+                </div>
+              </div>
+              <div class="activity-buttons">
+                <div class="button attend-button">Deltag</div>
+                <a href="aktivitet.html">
+                  <div class="button show-more-button">Vis mere</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="activity">
+            <div
+              class="activity-image"
+              style="background-image: url('/img/aktiviteter/3.jpg')"
+            ></div>
+            <div class="activity-description">
+              <div class="activity-info">
+                <div class="activity-time">
+                  <span>2. december</span>
+                  <span>kl 19:00</span>
+                </div>
+                <div class="activity-title">
+                  <h3>Online Drawing Event</h3>
+                </div>
+                <div class="activity-address">
+                  FabLab UCL, <br />
+                  Seebladsgade 1, 5000 Odense
+                </div>
+              </div>
+              <div class="activity-buttons">
+                <div class="button attend-button">Deltag</div>
+                <a href="aktivitet.html">
+                  <div class="button show-more-button">Vis mere</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="calendar-wrapper">
+            <h2>Kalender</h2>
+            <div class="calendar">
+              <ul class="calendar-header">
+                <li>M</li>
+                <li>T</li>
+                <li>O</li>
+                <li>T</li>
+                <li>F</li>
+                <li>L</li>
+                <li>S</li>
+              </ul>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </ul>
+              <ul>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+              </ul>
+              <ul>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+              </ul>
+              <ul>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+              </ul>
+              <ul>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+              </ul>
+            </div>
+            <div class="calendar-month">
+              <strong>&lt;&nbsp;&nbsp; Oktober 2020 &nbsp;&nbsp;&gt;</strong>
+            </div>
+          </div>
+          <div class="my-activities">
+            <h2>Mine aktiviteter</h2>
+            <ul>
+              <li>
+                <div
+                  class="my-activities-image"
+                  style="background-image: url('/img/aktiviteter/1.jpg')"
+                ></div>
+                <div>
+                  <h5 class="my-activities-title">Norwich Science Festival</h5>
+                  <span class="my-activities-date">27. november 2020</span>
+                  <span class="my-activities-info"
+                    >FabLab UCL, <br />
+                    Seebladsgade 1, <br />
+                    5000 Odense</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div
+                  class="my-activities-image"
+                  style="background-image: url('/img/aktiviteter/1.jpg')"
+                ></div>
+                <div>
+                  <h5 class="my-activities-title">Norwich Science Festival</h5>
+                  <span class="my-activities-date">27. november 2020</span>
+                  <span class="my-activities-info"
+                    >FabLab UCL, <br />
+                    Seebladsgade 1, <br />
+                    5000 Odense</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="sec-footer">
+        <div class="links-footer">
+          <ul>
+            <h4>LINKS</h4>
+            <li><a href="/pages/vaerksted.html">Værksted</a></li>
+            <li><a href="/pages/aktiviteter.html">Aktiviteter</a></li>
+            <li><a href="/pages/blog.html">Blog</a></li>
+            <li><a href="/pages/forum.html">Forum</a></li>
+            <li><a href="/pages/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="kontakt-footer">
+          <ul>
+            <h4>KONTAKT OS</h4>
+            <li>Seebladsgade 1, 5000 Odense C</li>
+            <li>
+              <span>Email:&nbsp;</span
+              ><a href="info@makersofdenmark.dk">info@makersofdenmark.dk</a>
+            </li>
+            <li><span>Telefon:&nbsp;</span>50 50 40 22</li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="fa fa-facebook"
+            ><img src="/img/Facebook.png" title="Facebook" alt="facebook"
+          /></a>
+          <a href="#" class="fa fa-linkedin"
+            ><img src="/img/LinkedIn.png" title="LinkedIn" alt="linkedin"
+          /></a>
+          <a href="#" class="fa fa-twitter"
+            ><img src="/img/Twitter.png" title="Twitter" alt="twitter"
+          /></a>
+        </div>
+        <div class="logo-link">
+          <a href="index.html"
+            ><img src="/img/Logo_white.svg" title="MakersOfDenmark" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
