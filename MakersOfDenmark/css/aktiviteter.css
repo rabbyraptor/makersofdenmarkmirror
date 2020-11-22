@@ -70,7 +70,7 @@ select {
 .activity-buttons {
   display: flex;
   flex-flow: column;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 8px;
 }
 
