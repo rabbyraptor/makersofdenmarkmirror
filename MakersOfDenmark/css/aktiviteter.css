@@ -27,14 +27,20 @@ select {
   display: flex;
   justify-content: space-between;
 }
-#add-activity-button {
+.text-button {
   color: #374785;
   font-size: 14px;
+}
+.text-button a {
+  text-decoration: none;
+  color: inherit;
+}
+.add-activity-button {
   margin-top: 10px;
   height: 18px;
   overflow: hidden;
 }
-#add-activity-button:hover {
+.text-button:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -47,8 +53,8 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.activity-description {
-  padding: 20px 5% 32px 5%;
+.activity-description-wrapper {
+  padding: 5% 5% 7.5% 5%;
   display: flex;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
@@ -192,4 +198,41 @@ span.my-activities-info {
   display: block;
   font-size: 0.8em;
   line-height: 1;
+}
+
+/* SINGLE PAGE ACTIVITY */
+.go-back-button {
+  font-weight: bold;
+}
+
+.single-page-activity .activity-image {
+  height: 250px;
+}
+
+.single-page-activity .activity-description {
+  padding: 0 5% 5% 5%;
+  margin-top: -16px;
+  font-size: 14px;
+}
+
+.single-page-activity .activity-attendance {
+  color: #374785;
+  font-size: 12px;
+  text-align: center;
+}
+
+.single-page-activity .activity-social-icons {
+  padding: 0 5% 5% 5%;
+}
+
+.single-page-activity .activity-social-icons .social-icons {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.single-page-activity .activity-social-icons .social-icons span {
+  margin-right: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #f76c6c;
 }
