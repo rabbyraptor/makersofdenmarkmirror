@@ -12,7 +12,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="../css/style.css" />
-      <link rel="stylesheet" href="../css/faq.css">
+      <link rel="stylesheet" href="../css/regny.css">
   </head>
 <body>
 <!-- Navbar Start -->
@@ -46,40 +46,26 @@
       </nav>
     </div>
   </div>
-  <article class="art-faq">
-      <div>   
-        <p><h2>Hvem er Makers of Denmark?</h2></p>
-        <div class="faq1"><img src="../img/faq_1.jpg" width="180" height="180"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et.</p>
+  <form action="" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Opret en ny bruger</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw-repeat"><b>Gentag Password</b></label>
+      <input type="password" placeholder="Gentag Password" name="psw-repeat" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Husk mig
+      </label>
+      <p><h5>Ved at oprette en konto accepterer du vores<a href="#" style="color:dodgerblue">Betingelser og vilkår</a>.</h5></p>
+      <div class="clearfix">
+        <button type="button" class="cancelbtn"><a href="../Index.html">TILBAGE</a></button>
+        <button type="submit" class="signupbtn">OPRET</button>
       </div>
-      <p class="faq-h"><h2>Oftest stillede spørgsmål</h2></p>
-      <div class="faq">
-          <button class="collapsible">Medlemskab</button>
-          <div class="content">
-            <p><b>Blev man en medlem?</b><br>
-            <p>Man kan blev medlem ved oprette en ny bruger.&nbsp;<a href="../pages/regny.html" color: red>Opret ny bruger</a></p>
-            <p><b>Kan men melde sig til et kursus når man er ikke medlem?</b><br>
-            <p>Man skal være medlem for at tilmeld til et kursus.&nbsp;<a href="../pages/regny.html" color: red>Blev medlem</a></p>
-            <p><b>Hvad koster at være en medlem?</b><br>
-            <p>Det koster ikke nogen at være medlem, men det koster lidt for at bruge maskiner.</p>
-          </div>
-          <button class="collapsible">Værksteder</button>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <button class="collapsible">Kursus</button>
-            <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          </div>
-          <button class="collapsible">Badges</button>
-          <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          </div>
-          <button class="collapsible">Kalender</button>
-          <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-      </div>
-  </article>
+    </div>
+  </form>
   <footer>
     <div class="sec-footer">
       <div class="links-footer">
@@ -110,6 +96,6 @@
       </div>
     </div>
   </footer>
-  <script src="../js/faq.js"></script>
+  <script src=""></script>
 </body>
 </html>

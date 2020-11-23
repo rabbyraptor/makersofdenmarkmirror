@@ -12,7 +12,7 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="../css/style.css" />
-      <link rel="stylesheet" href="../css/faq.css">
+      <link rel="stylesheet" href="../css/login.css">
   </head>
 <body>
 <!-- Navbar Start -->
@@ -46,40 +46,33 @@
       </nav>
     </div>
   </div>
-  <article class="art-faq">
-      <div>   
-        <p><h2>Hvem er Makers of Denmark?</h2></p>
-        <div class="faq1"><img src="../img/faq_1.jpg" width="180" height="180"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et hendrerit vitae, hendrerit non tortor. Praesent magna tortor, tincidunt ac tristique sit amet, condimentum ut erat. Mauris sem mi, ultrices et.</p>
-      </div>
-      <p class="faq-h"><h2>Oftest stillede spørgsmål</h2></p>
-      <div class="faq">
-          <button class="collapsible">Medlemskab</button>
-          <div class="content">
-            <p><b>Blev man en medlem?</b><br>
-            <p>Man kan blev medlem ved oprette en ny bruger.&nbsp;<a href="../pages/regny.html" color: red>Opret ny bruger</a></p>
-            <p><b>Kan men melde sig til et kursus når man er ikke medlem?</b><br>
-            <p>Man skal være medlem for at tilmeld til et kursus.&nbsp;<a href="../pages/regny.html" color: red>Blev medlem</a></p>
-            <p><b>Hvad koster at være en medlem?</b><br>
-            <p>Det koster ikke nogen at være medlem, men det koster lidt for at bruge maskiner.</p>
-          </div>
-          <button class="collapsible">Værksteder</button>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <button class="collapsible">Kursus</button>
-            <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          </div>
-          <button class="collapsible">Badges</button>
-          <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          </div>
-          <button class="collapsible">Kalender</button>
-          <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-      </div>
-  </article>
+  <!-- White space Start -->
+  <div id="login">
+		<form action="" method="get">
+      <fieldset style="border: none">
+        <h1>Login side</h1>
+				<p><input type="text" placeholder="E-mail eller Brugernavn" name="email" required></p>
+        <p><input type="password" placeholder="Password"  required></p>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Husk mig
+        </label>
+				<p><a href="#">Glemt Password?</a></p>
+				<p><input class="log" type="submit" value="Login"></p>
+			</fieldset >
+    </form>
+    <p><a class="klik-ny" href="../pages/regny.html"><h1>opret ny bruger</h1></a></p>
+    <fieldset style="border: none">
+		<p>
+			<i class="fa fa-facebook fa-fw"></i>
+			<button href="#" class="facebook">Login med Facbook</button>
+		</p>
+		<p>
+			<i class="fa fa-google fa-fw"></i>
+			<button href="#" class="google">Login med Google</button>
+		</p>
+    </fieldset>
+	  </div>
+  <!-- Footer Start -->
   <footer>
     <div class="sec-footer">
       <div class="links-footer">
@@ -110,6 +103,6 @@
       </div>
     </div>
   </footer>
-  <script src="../js/faq.js"></script>
+  <script src=""></script>
 </body>
 </html>
