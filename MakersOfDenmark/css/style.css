@@ -40,6 +40,7 @@ h5 {
   right: 0px;
   padding: 0 20px 0 20px;
   z-index: 1;
+  box-sizing: border-box;
 }
 .brand {
   position: absolute;
@@ -184,6 +185,7 @@ footer {
   margin: auto;
   background-color: #f76c6c;
   padding: 80px 20px;
+  z-index: 1;
 }
 .sec-footer {
   margin: auto;
@@ -374,9 +376,10 @@ aside {
   width: 250px;
   height: 100%;
   background-color: lightblue;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
+  z-index: 0;
 }
 main {
   padding-top: 90px;
