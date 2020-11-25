@@ -39,6 +39,7 @@ h5 {
   left: 0px;
   right: 0px;
   padding: 0 20px 0 20px;
+  z-index: 1;
 }
 .brand {
   position: absolute;
@@ -177,11 +178,12 @@ article {
 
 /* footer start her */
 footer {
-  padding: 80px 20px;
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  margin: auto;
   background-color: #f76c6c;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  padding: 80px 20px;
 }
 .sec-footer {
   margin: auto;
@@ -346,4 +348,71 @@ span.activities-sidewidget-info {
   display: block;
   font-size: 12px;
   line-height: 1;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.relative {
+  position: relative;
+}
+.position-absolute-bottom {
+  position: absolute;
+  bottom: 10px;
+}
+aside {
+  padding-top: 70px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 100%;
+  background-color: lightblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main {
+  padding-top: 90px;
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 50px;
+
+}
+.indlaeg-container {
+  flex: 1;
+  margin-right: 20px;
+
+}
+.indlaeg-container:last-child {
+  margin-right: 0px;
+}
+.indlaeg {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+}
+.indlaeg:last-child {
+  margin-bottom: 0px;
+}
+.indlaeg-container .indlaeg h1 {
+  font-size: 16px;
+  color: black;
+}
+.badge-container {
+}
+.badge-container img {
+  margin: 0px 20px 20px 0px;
+}
+.badge.container img:last-child {
+  margin: 0px 20px 20px 0px;
 }
