@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 /* define variables for colors */
-.test {
-  background-color: red; }
+body {
+  background-color: green; }
 
 /* ------------------------------------BLOG -----------------------------------------*/
 .title {
