@@ -5,7 +5,7 @@ Link til mockup: https://xd.adobe.com/view/4a77d071-f875-4b3c-ac51-c86da482c0f0-
 
 ### Skriv 'dotnet watch run' i terminal for at udvikle med Live Reload.
 
-## ASP.NET Core Web Application - MVC - ProductApp.Web
+## ASP.NET Core Web Application - MVC
 
 #### What is the MVC pattern?
 
