@@ -5,7 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\css\main.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\css\layout\_footer.scss" />
+    <None Include="wwwroot\css\layout\_header.scss" />
+    <None Include="wwwroot\css\pages\_blog.scss" />
+    <None Include="wwwroot\css\pages\_home.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\abstracts\" />
+    <Folder Include="wwwroot\css\base\" />
+    <Folder Include="wwwroot\css\components\" />
+    <Folder Include="wwwroot\css\themes\" />
+    <Folder Include="wwwroot\css\vendors\" />
   </ItemGroup>
 
 </Project>
