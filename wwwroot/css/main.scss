@@ -1,11 +1,11 @@
 ﻿// Config
-@import "_config.scss";
+@import "config";
 
 // Fonts
-@import "_fonts.scss";
+@import "fonts";
 
 // Layout
-@import "layout/_header.scss", "layout/_footer.scss";
+@import "layout/header", "layout/footer", "layout/mainContainer";
 
 // Pages
-@import "pages/_blog.scss", "pages/_home.scss";
+@import "pages/blog", "pages/home";

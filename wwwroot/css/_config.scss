@@ -1,5 +1,19 @@
+// Variables
+$primary-color: #24305e;
+$secondary-color: #f76c6c;
+$font-color: #4e4e4e;
+
+$page-width: 1200px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
+  color: $font-color;
 }
 
 @media (min-width: 768px) {
@@ -8,12 +22,7 @@ html {
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+// Headings
 h1,
 h2,
 h3,

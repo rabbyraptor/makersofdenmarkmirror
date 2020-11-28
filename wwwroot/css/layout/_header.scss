@@ -1,6 +1,11 @@
-﻿/* -- Navigation start -- */
+﻿$header-height: 70px;
+
+/* -- Navigation start -- */
+header {
+  margin-bottom: $header-height;
+}
 .navigation {
-  height: 70px;
+  height: $header-height;
   background: #24305e;
   position: fixed !important;
   top: 0px;
@@ -9,10 +14,11 @@
   padding: 0 20px 0 20px;
   z-index: 1;
   box-sizing: border-box;
+  font-size: 12px;
 }
 .brand {
   position: absolute;
-  line-height: 70px;
+  line-height: $header-height;
 }
 .brand a,
 .brand a:visited {
@@ -20,7 +26,7 @@
   text-decoration: none;
 }
 .nav-container {
-  max-width: 1000px;
+  max-width: $page-width;
   margin: 0 auto;
 }
 nav {
@@ -39,10 +45,9 @@ nav ul li a,
 nav ul li a:visited {
   display: block;
   padding: 0 12px;
-  line-height: 70px;
+  line-height: $header-height;
   background: #24305e;
   color: #ffffff;
-  font-family: Montserrat;
   font-size: 16px;
   text-decoration: none;
 }

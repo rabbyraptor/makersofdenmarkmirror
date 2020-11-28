@@ -1,12 +1,4 @@
-﻿.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
-
-@media only screen and (max-width: 1000px) {
+﻿@media only screen and (max-width: 1000px) {
   /* Mobile footer */
   .sec-footer {
     grid-template-columns: repeat(auto-fit, #{"minmax(320px, 1fr)"}) !important;
@@ -18,28 +10,37 @@ footer {
   width: 100%;
   background-color: #f76c6c;
   padding: 80px 20px;
+  font-size: 16px;
+  a {
+    color: #fff;
+  }
 }
 .footer-grid {
   margin: auto;
-  max-width: 1000px;
+  max-width: $page-width;
   display: grid;
   grid-template-columns: repeat(auto-fit, #{"minmax(min(230px, 100%), 1fr)"});
+  div {
+    padding: 0 20px 0 0;
+  }
+  div:last-of-type {
+    padding: 0;
+  }
 }
-footer div {
-  padding: 0 20px 0 0;
-  box-sizing: border-box;
-}
-footer div:last-of-type {
-  padding: 0;
-}
-footer a {
-  color: #fff;
-}
-.links-footer a {
-  text-decoration: none;
-}
-.links-footer a:hover {
-  text-decoration: underline;
+
+.links-footer {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    color: #ffffff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 .logo-link {
   top: 0px;
@@ -48,7 +49,6 @@ footer a {
 }
 .logo-link a img {
   width: 100%;
-  max-width: 250px;
   height: auto;
 }
 .social-icons {
@@ -88,17 +88,8 @@ footer a {
   background: #ffffff;
   color: #f76c6c;
 }
-.links-footer ul {
-  font-family: Montserrat;
-  font-size: 13px;
-  color: #ffffff;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+
 .kontakt-footer ul {
-  font-family: Montserrat;
-  font-size: 13px;
   color: #ffffff;
   list-style-type: none;
   margin: 0;
