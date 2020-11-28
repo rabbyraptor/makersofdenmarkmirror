@@ -1,8 +1,5 @@
 ﻿@charset "UTF-8";
 /* define variables for colors */
-body {
-  background-color: green; }
-
 /* ------------------------------------BLOG -----------------------------------------*/
 .title {
   margin: 40px 0; }

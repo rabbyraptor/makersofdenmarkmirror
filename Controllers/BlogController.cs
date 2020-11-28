@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
+using MakersOfDenmarkModels.Lib;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +15,16 @@ namespace MakersOfDenmark.Controllers
         // GET: BlogController
         public ActionResult Index()
         {
-            return View();
+            //opret en web client
+            WebClient wc = new WebClient();
+            //hent data fra API (Kommer som json)
+            var json = wc.DownloadString("https://localhost:44399/api/blog");
+            //deserialisere det rå data til List<Student>
+            var options = new JsonSerializerOptions();
+            options.PropertyNameCaseInsensitive = true;
+            var result = JsonSerializer.Deserialize<List<Blog>>(json, options);
+            //Returnere
+            return View(result);
         }
 
         // GET: BlogController/Details/5

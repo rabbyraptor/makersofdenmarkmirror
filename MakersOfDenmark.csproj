@@ -33,4 +33,8 @@
     <Folder Include="wwwroot\css\vendors\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MakersOfDenmarkModels.Lib\MakersOfDenmarkModels.Lib.csproj" />
+  </ItemGroup>
+
 </Project>
