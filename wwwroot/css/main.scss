@@ -1,10 +1,11 @@
-﻿@import 
-    'pages/_blog.scss', 
-    'pages/_home.scss';
+﻿// Config
+@import "_config.scss";
 
-@import 
-    'layout/_header.scss', 
-    'layout/_footer.scss';
+// Fonts
+@import "_fonts.scss";
 
-body {
-}
+// Layout
+@import "layout/_header.scss", "layout/_footer.scss";
+
+// Pages
+@import "pages/_blog.scss", "pages/_home.scss";
