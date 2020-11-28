@@ -82,13 +82,11 @@ $blog_text: #A9A6A1;
     width: 300px;
     margin: 20px;
     box-shadow: 4px 4px 10px #888888;
+    text-decoration: none;
 
     a {
         color: black;
-
-        &:hover {
-            text-decoration: none;
-        }
+        text-decoration: none;
     }
 }
 
