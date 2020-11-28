@@ -11,6 +11,7 @@ footer {
   background-color: #f76c6c;
   padding: 80px 20px;
   font-size: 16px;
+  color: #ffffff;
   a {
     color: #fff;
   }
@@ -53,44 +54,21 @@ footer {
 }
 .social-icons {
   display: flex;
+  margin-left: -10px;
 }
-.fa img {
-  width: 40px;
-  height: auto;
-}
-.fa {
-  text-align: center;
-  text-decoration: none;
-  height: 40px;
+
+.si {
   margin: 0 10px 0 0;
-}
-.fa:last-of-type {
-  margin: 0;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #ffffff;
-  color: #f76c6c;
-}
-.fa-twitter {
-  background: #ffffff;
-  color: #f76c6c;
-  padding: 2px 2px 2px 2px;
-  box-sizing: border-box;
-}
-.fa-twitter img {
-  height: 36px;
-  width: auto;
-}
-.fa-linkedin {
-  background: #ffffff;
-  color: #f76c6c;
+  height: 44px;
+  :last-of-type {
+    margin: 0;
+  }
+  :hover {
+    opacity: 0.7;
+  }
 }
 
 .kontakt-footer ul {
-  color: #ffffff;
   list-style-type: none;
   margin: 0;
   padding: 0;
