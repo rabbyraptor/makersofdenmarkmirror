@@ -1,0 +1,181 @@
+@{
+
+}
+<div class="grid-1-2-1">
+    <div class="left-column">
+        <div class="go-back-button">
+            <span class="text-button">
+                <a href="/pages/aktiviteter.html">
+                    &lt;&nbsp;&nbsp;Se alle aktiviteter
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="center-column">
+        <div class="single-page-activity activity">
+            <div class="activity-image" style="background-image: url('@Model.ImgUrl')"></div>
+            <div class="activity-description-wrapper">
+                <div class="activity-info">
+                    <div class="activity-time">
+                        <span>@Model.Date</span>
+                        <span>@Model.StartTime</span>
+                    </div>
+                    <div class="activity-title">
+                        <h3>@Model.Title</h3>
+                    </div>
+                    <div class="activity-address">
+                        @Model.MakerSpace, <br />
+                        @Model.Address
+                    </div>
+                </div>
+                <div class="activity-buttons">
+                    <div class="button attend-button">Deltag</div>
+                    <span class="activity-attendance"><strong>9</strong> andre deltager</span>
+                </div>
+            </div>
+            <div class="activity-description">
+                <p>
+                    Cras risus lectus, vestibulum nec condimentum sit amet,
+                    tristique sed mauris. Quisque aliquam eros magna, in cursus orci
+                    mollis id. Mauris eu lacus ex. <br /><br />Duis eu purus sit
+                    amet metus pretium bibendum. Curabitur orci arcu, bibendum ut
+                    neque sed, consectetur sodales tortor. Interdum et malesuada
+                    fames ac ante ipsum primis in faucibus.
+                </p>
+            </div>
+            <div class="activity-social-icons">
+                <div class="social-icons">
+                    <span>Del på</span>
+                    <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44"
+                            viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></a>
+                    <a href="#" class="fa fa-linkedin"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44"
+                            viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg></a>
+                    <a href="#" class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44"
+                            viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="calendar-wrapper">
+            <h2>Kalender</h2>
+            <div class="calendar">
+                <ul class="calendar-header">
+                    <li>M</li>
+                    <li>T</li>
+                    <li>O</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>L</li>
+                    <li>S</li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <ul>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                </ul>
+                <ul>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                </ul>
+                <ul>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                </ul>
+                <ul>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+            <div class="calendar-month">
+                <strong>&lt;&nbsp;&nbsp; Oktober 2020 &nbsp;&nbsp;&gt;</strong>
+            </div>
+        </div>
+        <div class="activities-sidewidget">
+            <h2>Mine aktiviteter</h2>
+            <ul>
+                <li>
+                    <div class="activities-sidewidget-image" style="background-image: url('/img/aktiviteter/1.jpg')">
+                    </div>
+                    <div>
+                        <h5 class="activities-sidewidget-title">
+                            Norwich Science Festival
+                        </h5>
+                        <span class="activities-sidewidget-date">27. november 2020</span>
+                        <span class="activities-sidewidget-info">FabLab UCL, <br />
+                            Seebladsgade 1, <br />
+                            5000 Odense</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="activities-sidewidget-image" style="background-image: url('/img/aktiviteter/1.jpg')">
+                    </div>
+                    <div>
+                        <h5 class="activities-sidewidget-title">
+                            Norwich Science Festival
+                        </h5>
+                        <span class="activities-sidewidget-date">27. november 2020</span>
+                        <span class="activities-sidewidget-info">FabLab UCL, <br />
+                            Seebladsgade 1, <br />
+                            5000 Odense</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>TITLE: @Model.Title</h2>
+<h2>ID: @Model.Id</h2>
+<h2>DATE: @Model.Date</h2>
+<h2>STARTTIME: @Model.StartTime</h2>
+<h2>MAKERSPACE: @Model.MakerSpace</h2>
+<h2>ADDRESS: @Model.Address</h2>
+<h2>IMGURL: @Model.ImgUrl</h2>
