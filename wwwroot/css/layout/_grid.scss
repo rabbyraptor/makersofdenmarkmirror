@@ -1,0 +1,10 @@
+.grid-1-2-1 {
+  margin: auto;
+  display: grid;
+  grid-template-columns:
+    150px
+    minmax(450px, 2fr)
+    250px;
+  justify-content: space-between;
+  gap: 5%;
+}
