@@ -655,6 +655,10 @@ span.activities-sidewidget-info {
 /* SINGLE PAGE ACTIVITY */
 .go-back-button {
   font-weight: bold;
+  background-color: #24305e;
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
 .single-page-activity .activity-image {
