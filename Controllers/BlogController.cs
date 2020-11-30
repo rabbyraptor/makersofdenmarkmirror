@@ -15,6 +15,8 @@ namespace MakersOfDenmark.Controllers
         // GET: BlogController
         public ActionResult Index()
         {
+            /* API Connection. 
+
             //opret en web client
             WebClient wc = new WebClient();
             //hent data fra API (Kommer som json)
@@ -25,6 +27,36 @@ namespace MakersOfDenmark.Controllers
             var result = JsonSerializer.Deserialize<List<Blog>>(json, options);
             //Returnere
             return View(result);
+
+            */
+
+            /* En forloop med en liste af blogs
+ 
+            List<Blog> blogs = new List<Blog>();
+            // hent liste med studerende fra db
+            // vi opretter mock data
+            for (int i = 0; i < 10; i++)
+            {
+                Blog blog = new Blog
+                {
+                    Id = i,
+                    Title = "Title1",
+                    Category = "Category",
+                    Date = 1 + i + ". " + "november"
+                };
+                blogs.Add(blog);
+            }
+            return View(blogs);
+            */
+
+            List<Blog> blogs = new List<Blog>
+            {
+                new Blog() { Id = 1, Title = "test", Category = "Laser", Date = "1. november"},
+                new Blog() { Id = 2, Title = "test2", Category = "Laser", Date = "2. november"},
+                new Blog() { Id = 3, Title = "test3", Category = "Laser", Date = "3. november"},
+                new Blog() { Id = 4, Title = "test4", Category = "Laser", Date = "4. november"}
+            };
+            return View(blogs);
         }
 
         // GET: BlogController/Details/5
