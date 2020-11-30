@@ -34,6 +34,7 @@ h1,
 h2 {
   font-family: Merriweather;
   font-display: swap;
+  margin-bottom: 16px;
 }
 
 /* -- Navigation start -- */
@@ -501,16 +502,30 @@ select {
   padding: 4px 0;
   font-weight: bold;
   color: #fff;
-  -webkit-box-shadow: 3px 3px 6px black;
-          box-shadow: 3px 3px 6px black;
+  -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-.activity-buttons a {
+.activities-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: auto;
+}
+
+.activities-buttons a {
+  color: #fff;
   text-decoration: none;
 }
 
 .button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .attend-button {
@@ -677,8 +692,8 @@ span.activities-sidewidget-info {
 }
 
 .activity {
-  -webkit-box-shadow: 3px 6px 9px black;
-          box-shadow: 3px 6px 9px black;
+  -webkit-box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.16);
   margin-bottom: 40px;
 }
 

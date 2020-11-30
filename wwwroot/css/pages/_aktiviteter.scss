@@ -39,14 +39,22 @@ select {
   padding: 4px 0;
   font-weight: bold;
   color: #fff;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 16%);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 }
-.activity-buttons a {
-  text-decoration: none;
+.activities-buttons {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-top: auto;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .attend-button {
