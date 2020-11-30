@@ -1,10 +1,11 @@
-.makerspace-contact h4 {
-  margin-bottom: 0;
-}
-
-.makerspace-contact span {
-  display: inline-block;
-  margin-bottom: 16px;
+.makerspace-contact {
+  h4 {
+    margin-bottom: 0;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
 }
 
 .makerspace > div {
@@ -20,7 +21,7 @@
 
 .makerspace-blog-image {
   min-width: 150px;
-  height: 120px;
+  height: 100px;
   margin-right: 16px;
   background-position: center;
   background-size: cover;
@@ -29,22 +30,26 @@
 .makerspace-blog-excerpt {
   display: flex;
   grid-template-columns: 150px auto;
-}
-
-.makerspace-blog-excerpt h4 {
-  margin-bottom: 0;
-  font-size: 15px;
-}
-
-.makerspace-blog-excerpt p {
-  margin-top: 2px;
-  font-size: 14px;
+  align-content: space-around;
+  h4 {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  p {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+  .makerspace-blog-content {
+    display: grid;
+    align-content: space-around;
+  }
 }
 
 .makerspace-blog-excerpt-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  flex-flow: column;
   font-size: 14px;
 }
 
@@ -56,11 +61,10 @@
 .makerspace-blog-readmore {
   text-align: right;
   font-weight: bold;
-}
-
-.makerspace-blog-readmore a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .makerspace-tags {

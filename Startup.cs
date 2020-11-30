@@ -53,6 +53,10 @@ namespace MakersOfDenmark
                     pattern: "{controller=Aktiviteter}/{id}",
                     defaults: new { controller = "Aktiviteter", action = "Id" });
                 endpoints.MapControllerRoute(
+                    name: "makerspace",
+                    pattern: "{controller=Makerspace}/{id}",
+                    defaults: new { controller = "Makerspace", action = "Id" });
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/");
             });
