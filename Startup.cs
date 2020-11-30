@@ -50,7 +50,7 @@ namespace MakersOfDenmark
             {
                 endpoints.MapControllerRoute(
                     name: "aktiviteter",
-                    pattern: "aktiviteter/{id?}",
+                    pattern: "{controller=Aktiviteter}/{id}",
                     defaults: new { controller = "Aktiviteter", action = "Id" });
                 endpoints.MapControllerRoute(
                     name: "default",
