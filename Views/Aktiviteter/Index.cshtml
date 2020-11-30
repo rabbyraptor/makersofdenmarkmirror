@@ -2,6 +2,160 @@
     ViewData["Title"] = "Aktiviteter";
 }
 
-<div>
-    <h1>Aktiviteter</h1>
+<div class="grid-1-2-1">
+    <div class="left-column">
+        <h2>Filtrér</h2>
+        <input type="checkbox" id="filter-kursus-checkbox" name="kursus" value="Kursus" />
+        <label for="kursus">Kursus</label>
+        <br />
+        <input type="checkbox" id="filter-foredrag-checkbox" name="foredrag" value="Foredrag" />
+        <label for="foredrag">Foredrag</label>
+        <br />
+        <label for="maskintype">Maskintype:</label>
+        <br />
+        <select name="maskintype" id="filter-maskintype">
+            <option value="all">Alle</option>
+            <option value="lasercutter">Lasercutter</option>
+            <option value="3D-printer">3D-printer</option>
+        </select>
+        <br />
+        <label for="region">Region:</label>
+        <br />
+        <select name="region" id="filter-region">
+            <option value="all">Hele landet</option>
+            <option value="nordjylland">Nordjylland</option>
+            <option value="midtjylland">Midtjylland</option>
+            <option value="syddanmark">Syddanmark</option>
+            <option value="sjælland">Sjælland</option>
+            <option value="hovedstaden">Hovedstaden</option>
+        </select>
+    </div>
+    <div class="center-column">
+        <div class="activities-title">
+            <h2>Kommende aktiviteter</h2>
+            <span class="text-button add-activity-button">+ Tilføj ny aktivitet</span>
+        </div>
+        <div class="activity">
+            <a asp-controller="aktiviteter" asp-action="@Model.Id">
+                <div class="activity-image" style="background-image: url('@Model.ImgUrl')"></div>
+            </a>
+            <div class="activity-description-wrapper">
+                <div class="activity-info">
+                    <div class="activity-time">
+                        <span>@Model.Date</span>
+                        <span>@Model.StartTime</span>
+                    </div>
+                    <div class="activity-title">
+                        <h3>@Model.Title</h3>
+                    </div>
+                    <div class="activity-address">
+                        @Model.MakerSpace, <br />
+                        @Model.Address
+                    </div>
+                </div>
+                <div class="activities-buttons">
+                    <div class="button attend-button">Deltag</div>
+                    <a asp-controller="aktiviteter" asp-action="@Model.Id">
+                        <div class="button show-more-button">
+                            Vis mere
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="calendar-wrapper">
+            <h2>Kalender</h2>
+            <div class="calendar">
+                <ul class="calendar-header">
+                    <li>M</li>
+                    <li>T</li>
+                    <li>O</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>L</li>
+                    <li>S</li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+                <ul>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                </ul>
+                <ul>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                </ul>
+                <ul>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                </ul>
+                <ul>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+            <div class="calendar-month">
+                <strong>&lt;&nbsp;&nbsp; Oktober 2020 &nbsp;&nbsp;&gt;</strong>
+            </div>
+        </div>
+        <div class="activities-sidewidget">
+            <h2>Mine aktiviteter</h2>
+            <ul>
+                <li>
+                    <div class="activities-sidewidget-image" style="background-image: url('/img/aktiviteter/1.jpg')">
+                    </div>
+                    <div>
+                        <h5 class="activities-sidewidget-title">
+                            Norwich Science Festival
+                        </h5>
+                        <span class="activities-sidewidget-date">27. november 2020</span>
+                        <span class="activities-sidewidget-info">FabLab UCL, <br />
+                            Seebladsgade 1, <br />
+                            5000 Odense</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="activities-sidewidget-image" style="background-image: url('/img/aktiviteter/1.jpg')">
+                    </div>
+                    <div>
+                        <h5 class="activities-sidewidget-title">
+                            Norwich Science Festival
+                        </h5>
+                        <span class="activities-sidewidget-date">27. november 2020</span>
+                        <span class="activities-sidewidget-info">FabLab UCL, <br />
+                            Seebladsgade 1, <br />
+                            5000 Odense</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
