@@ -5,7 +5,7 @@
     <div class="left-column">
         <div class="go-back-button">
             <span class="text-button">
-                <a href="/pages/aktiviteter.html">
+                <a asp-controller="aktiviteter" asp-action="index">
                     &lt;&nbsp;&nbsp;Se alle aktiviteter
                 </a>
             </span>
@@ -171,11 +171,12 @@
         </div>
     </div>
 </div>
-
-<h2>TITLE: @Model.Title</h2>
-<h2>ID: @Model.Id</h2>
-<h2>DATE: @Model.Date</h2>
-<h2>STARTTIME: @Model.StartTime</h2>
-<h2>MAKERSPACE: @Model.MakerSpace</h2>
-<h2>ADDRESS: @Model.Address</h2>
-<h2>IMGURL: @Model.ImgUrl</h2>
+@*
+    <h2>TITLE: @Model.Title</h2>
+    <h2>ID: @Model.Id</h2>
+    <h2>DATE: @Model.Date</h2>
+    <h2>STARTTIME: @Model.StartTime</h2>
+    <h2>MAKERSPACE: @Model.MakerSpace</h2>
+    <h2>ADDRESS: @Model.Address</h2>
+    <h2>IMGURL: @Model.ImgUrl</h2>
+*@
