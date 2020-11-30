@@ -18,9 +18,9 @@ namespace MakersOfDenmark.Controllers
         // 
         // GET: /Aktiviteter/id/ 
 
-        public IActionResult Id(int id)
+        public IActionResult Id(string id)
         {
-            var aktivitet = new Aktivitet { Id = id.ToString(), Title = "Norwich Science Festival", Date = "27. november", StartTime = "kl. 16:00", MakerSpace = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense", ImgUrl = "/img/aktiviteter/1.jpg" };
+            var aktivitet = new Aktivitet { Id = id, Title = "Norwich Science Festival", Date = "27. november", StartTime = "kl. 16:00", MakerSpace = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense", ImgUrl = "/img/aktiviteter/1.jpg" };
             return View(aktivitet);
         }
     }
