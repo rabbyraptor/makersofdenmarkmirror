@@ -32,7 +32,7 @@
     @foreach (var item in Model)
     {
         <div class="blog-container">
-            <a asp-action="Details">
+            <a asp-controller="blog" asp-action="Details" asp-route-id="@item.Id">
                 <div class="grid-item blog-top">
                     <div class="category-upper-right">
                         @Html.DisplayFor(modelItem => item.Category)

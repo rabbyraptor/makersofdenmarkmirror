@@ -62,7 +62,11 @@ namespace MakersOfDenmark.Controllers
         // GET: BlogController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+
+
+            var blogs = new Blog() { Id = id, Title = "test", Category = "Laser", Date = "1. november" };
+ 
+            return View(blogs);
         }
 
         // GET: BlogController/Create
