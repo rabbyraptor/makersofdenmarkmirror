@@ -20,7 +20,14 @@ namespace MakersOfDenmark.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<HomeViewModel> home = new List<HomeViewModel>
+            {
+                new HomeViewModel() { Id = 1, Title = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense C", ImgUrl = "/img/home/fablab-ucl.jpeg"},
+                new HomeViewModel() { Id = 2, Title = "FabLab2 UCL", Address = "Seebladsgade 1, 5000 Odense C", ImgUrl = "/img/home/img-1-small580.jpg"},
+                new HomeViewModel() { Id = 3, Title = "FabLab3 UCL", Address = "Seebladsgade 1, 5000 Odense C", ImgUrl = "/img/home/IMG_2678.JPG"},
+                new HomeViewModel() { Id = 4, Title = "FabLab4 UCL", Address = "Seebladsgade 1, 5000 Odense C", ImgUrl = "/img/home/fablabodense.jpg"}
+            };
+            return View(home);
         }
 
         public IActionResult Privacy()

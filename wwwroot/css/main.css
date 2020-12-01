@@ -399,6 +399,7 @@ main {
   grid-template-columns: auto auto auto;
   margin-bottom: 20px; }
 
+/* define variables for colors */
 /* ------------------------------------Home -----------------------------------------*/
 .home-wrapper {
   width: 1000px;
@@ -442,8 +443,7 @@ main {
 .home-filter-container {
   margin: 20px 20px;
   display: grid;
-  grid-template-columns: 250px auto;
-  height: 500px; }
+  grid-template-columns: 250px auto; }
   .home-filter-container p {
     font-size: 20px;
     font-weight: bold; }
@@ -486,3 +486,44 @@ main {
     background-size: cover;
     height: 350px;
     margin: 10px 0; }
+  .home-filter-container .home-find-vaerksted .home-details-vaerksted {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px; }
+    .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted {
+      margin: 0 20px 20px 0;
+      height: 130px;
+      display: grid;
+      box-shadow: 4px 4px 10px #888888;
+      grid-template-columns: 120px auto; }
+      .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .details-vaerksted-img {
+        height: 130px;
+        width: 120px;
+        background-size: cover;
+        background-position: center; }
+      .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .details-vaerksted-title {
+        margin: 15px 15px 4px;
+        font-weight: bold; }
+      .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .details-vaerksted-address {
+        margin: 0 15px;
+        font-size: 14px; }
+      .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .vaerksted-buttons {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: auto auto; }
+        .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .vaerksted-buttons .vaerksted-buttons-følg {
+          text-align: center;
+          background-color: #f76c6c;
+          margin: 0 5px;
+          padding: 3px 6px;
+          font-size: 12px;
+          font-weight: bold;
+          color: white; }
+        .home-filter-container .home-find-vaerksted .home-details-vaerksted .details-vaerksted .vaerksted-buttons .vaerksted-buttons-se {
+          text-align: center;
+          background-color: #a8d0e6;
+          margin: 0 5px;
+          padding: 3px 6px;
+          font-size: 12px;
+          font-weight: bold;
+          color: white; }

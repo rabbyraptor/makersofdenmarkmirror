@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MakersOfDenmark.Models.HomeViewModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,7 +7,7 @@
     <div class="home-img">
         <div class="home-center-search">
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
-            <input type="text" placeholder="Find værksted.."/>
+            <input type="text" placeholder="Find værksted.." />
         </div>
     </div>
     <div class="home-filter-container">
@@ -53,6 +54,26 @@
         <div class="home-find-vaerksted">
             <p>Find værksted</p>
             <div class="home-google-maps">
+            </div>
+            <div class="home-details-vaerksted">
+                @foreach (var item in Model)
+                {
+                <div class="details-vaerksted">
+                    <div class="details-vaerksted-img" style="background-image: url('@Html.DisplayFor(modelItem => item.ImgUrl)')"></div>
+                    <div>
+                        <div class="details-vaerksted-title">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </div>
+                        <div class="details-vaerksted-address">
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </div>
+                        <div class="vaerksted-buttons">
+                            <div class="vaerksted-buttons-følg">Følg</div>
+                            <div class="vaerksted-buttons-se">Se værksted</div>
+                        </div>
+                    </div>
+                </div>
+                }
             </div>
         </div>
     </div>
