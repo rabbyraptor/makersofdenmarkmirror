@@ -444,10 +444,10 @@ main {
   display: grid;
   grid-template-columns: 250px auto;
   height: 500px; }
-  .home-filter-container .home-filter p {
+  .home-filter-container p {
     font-size: 20px;
     font-weight: bold; }
-  .home-filter-container .home-filter input {
+  .home-filter-container .home-filter .filter-search {
     width: 200px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -458,9 +458,31 @@ main {
     background-size: 16px;
     padding: 12px 20px 12px 36px;
     margin: 10px 0; }
-    .home-filter-container .home-filter input:focus {
+    .home-filter-container .home-filter .filter-search:focus {
       outline: none;
       border: 2px solid; }
-  .home-filter-container .home-find-vaerksted p {
-    font-size: 20px;
-    font-weight: bold; }
+  .home-filter-container .home-filter .home-region {
+    margin-bottom: 30px; }
+    .home-filter-container .home-filter .home-region p {
+      font-size: 16px; }
+    .home-filter-container .home-filter .home-region div {
+      margin: 10px 0;
+      display: grid;
+      grid-template-columns: 30px auto; }
+      .home-filter-container .home-filter .home-region div input {
+        width: 20px;
+        height: 20px;
+        cursor: pointer; }
+      .home-filter-container .home-filter .home-region div label {
+        font-size: 16px; }
+  .home-filter-container .home-filter select {
+    margin: 10px 0;
+    width: 150px;
+    height: 30px; }
+  .home-filter-container .home-find-vaerksted .home-google-maps {
+    position: relative;
+    background-image: url("/img/home/googlemap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin: 10px 0; }
