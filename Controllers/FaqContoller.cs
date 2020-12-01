@@ -8,12 +8,11 @@ namespace MakersOfDenmark.Controllers
     {
         // GET: /Faq/
 
-        public IActionResult Index()
+       public IActionResult Index()
         {
-            //var faq = new Faq { Id = "1", Title = "Norwich Science Festival", Date = "27. november", StartTime = "kl. 16:00", MakerSpace = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense", ImgUrl = "/img/aktiviteter/1.jpg" };
+           //var faq = new Faq { Id = "1", Title = "Norwich Science Festival", Date = "27. november", StartTime = "kl. 16:00", MakerSpace = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense", ImgUrl = "/img/aktiviteter/1.jpg" };
             //return View(aktivitet);
             return View();
-        }
-
     }
+}
 }

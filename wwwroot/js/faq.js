@@ -1,4 +1,4 @@
-/* FAQ - collaps list */
+/* FAQ - collaps list js */
 let coll = document.getElementsByClassName("collapsible");
 let i;
 
