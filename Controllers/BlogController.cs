@@ -51,10 +51,15 @@ namespace MakersOfDenmark.Controllers
 
             List<Blog> blogs = new List<Blog>
             {
-                new Blog() { Id = 1, Title = "test", Category = "Laser", Date = "1. november"},
-                new Blog() { Id = 2, Title = "test2", Category = "Laser", Date = "2. november"},
-                new Blog() { Id = 3, Title = "test3", Category = "Laser", Date = "3. november"},
-                new Blog() { Id = 4, Title = "test4", Category = "Laser", Date = "4. november"}
+                new Blog() { Id = 1, Title = "Collapsible Dice Holder", Category = "3d print", Date = "30. oktober 2020", ImgUrl = "/img/blog/Dice-Tower.jpg"},
+                new Blog() { Id = 2, Title = "Mid-Century Modern Moth Clock", Category = "Laser cutter", Date = "24. oktober 2020", ImgUrl = "/img/blog/IMG_8718.jpg"},
+                new Blog() { Id = 3, Title = "Anti-Gravity Planter", Category = "3d print", Date = "29. september 2020", ImgUrl = "/img/blog/Anti-Gravity-Planter.jpg"},
+                new Blog() { Id = 4, Title = "Quick Grab/Release Phone Stand", Category = "3d print", Date = "19. september 2020", ImgUrl = "/img/blog/Phone-Stand.jpg"},
+                new Blog() { Id = 5, Title = "Illuminated Shadowbox Art", Category = "Laser cutter", Date = "10. september 2020", ImgUrl = "/img/blog/groovi-monster.jpg"},
+                new Blog() { Id = 6, Title = "Brew Cart - Six Pack Beer Caddy", Category = "Cnc", Date = "9. september 2020", ImgUrl = "/img/blog/Prusa-Ratchets-1.jpg"},
+                new Blog() { Id = 7, Title = "Decorative Wall Panels Mangroves of Plywood", Category = "Cnc", Date = "90. august 2020", ImgUrl = "/img/blog/turntable..jpg"},
+                new Blog() { Id = 8, Title = "DaVinci Catapult Gift Card", Category = "3d print", Date = "19. august 2020", ImgUrl = "/img/blog/Cool-Things-Archery-Target-Pen-Holder.jpg"},
+                new Blog() { Id = 9, Title = "Robisk dodekahedron evighedsspejl", Category = "3d print", Date = "12. august 2020", ImgUrl = "/img/blog/evighedsspejl.jpg"}
             };
             return View(blogs);
         }
@@ -62,11 +67,32 @@ namespace MakersOfDenmark.Controllers
         // GET: BlogController/Details/5
         public ActionResult Details(int id)
         {
+            if (id == 1)
+            {
+                var blogs = new Blog() { Id = id, Title = "test", Category = "Laser", Date = "1. november" };
 
+                return View(blogs);
+            } 
+            else if (id == 2)
+            {
+                var blogs = new Blog() { Id = id, Title = "2", Category = "Laser", Date = "1. november" };
 
-            var blogs = new Blog() { Id = id, Title = "test", Category = "Laser", Date = "1. november" };
- 
-            return View(blogs);
+                return View(blogs);
+            }
+            else if (id == 3)
+            {
+                var blogs = new Blog() { Id = id, Title = "3", Category = "Laser", Date = "1. november" };
+
+                return View(blogs);
+            }
+            else if (id == 4)
+            {
+                var blogs = new Blog() { Id = id, Title = "4", Category = "Laser", Date = "1. november" };
+
+                return View(blogs);
+            }
+
+            return View();
         }
 
         // GET: BlogController/Create

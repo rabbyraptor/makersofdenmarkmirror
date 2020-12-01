@@ -93,7 +93,9 @@ $blog_text: #A9A6A1;
 .blog-top {
     position: relative;
     height: 180px;
-    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .category-upper-right {
         position: absolute;

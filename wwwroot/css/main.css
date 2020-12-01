@@ -302,7 +302,9 @@ main {
 .blog-top {
   position: relative;
   height: 180px;
-  background-color: black; }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
   .blog-top .category-upper-right {
     position: absolute;
     right: 10px;

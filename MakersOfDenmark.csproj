@@ -31,6 +31,7 @@
     <Folder Include="wwwroot\css\components\" />
     <Folder Include="wwwroot\css\themes\" />
     <Folder Include="wwwroot\css\vendors\" />
+    <Folder Include="wwwroot\img\blog\" />
   </ItemGroup>
 
 </Project>
