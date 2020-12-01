@@ -6,7 +6,6 @@ namespace MakersOfDenmark.Controllers
 {
     public class Faq : Controller
     {
-        // 
         // GET: /Faq/
 
         public IActionResult Index()
