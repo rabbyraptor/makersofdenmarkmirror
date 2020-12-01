@@ -310,7 +310,7 @@ main {
     right: 10px;
     top: 10px;
     font-size: 14px;
-    padding: 0 10px;
+    padding: 2px 10px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #f76c6c;
@@ -328,3 +328,73 @@ main {
     color: #A9A6A1; }
 
 /* ------------------------------------BLOG INDLÆG -----------------------------------------*/
+.blog-wrapper {
+  width: 1000px;
+  margin: 0 auto; }
+
+.details-blog-container {
+  margin: 0 0 0 20px; }
+  .details-blog-container .details-blog-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .details-blog-container .details-blog-date {
+    color: #f76c6c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .details-blog-container .details-blog-img {
+    height: 800px;
+    margin: 20px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .details-blog-container .details-blog-description {
+    font-size: 18px;
+    line-height: 1.6; }
+  .details-blog-container .details-blog-subheading {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 10px; }
+  .details-blog-container .details-blog-some {
+    display: grid;
+    grid-template-columns: 80px auto;
+    margin: 30px 0 0 0; }
+    .details-blog-container .details-blog-some p {
+      color: #f76c6c;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px; }
+    .details-blog-container .details-blog-some a {
+      text-decoration: none; }
+  .details-blog-container .details-blog-divider hr {
+    border-top: 2px solid #bbb;
+    border-radius: 5px;
+    margin: 20px 80px 60px; }
+
+.nyeste-indlæg {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative; }
+  .nyeste-indlæg p {
+    color: #A9A6A1;
+    font-size: 26px;
+    font-weight: bold; }
+  .nyeste-indlæg a {
+    position: absolute;
+    right: 0;
+    color: #f76c6c;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto auto; }
+    .nyeste-indlæg a img {
+      height: 26px;
+      margin: 0 10px; }
+
+.newest-blog-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 20px; }

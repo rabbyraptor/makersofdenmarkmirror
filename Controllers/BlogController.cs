@@ -69,29 +69,67 @@ namespace MakersOfDenmark.Controllers
         {
             if (id == 1)
             {
-                var blogs = new Blog() { Id = id, Title = "test", Category = "Laser", Date = "1. november" };
+                List<TopIndlæg> topindlægs = new List<TopIndlæg>();
+                topindlægs.Add(new TopIndlæg { Id = 1, Title = "Collapsible Dice Holder", Category = "3d print", Date = "30. oktober 2020", ImgUrl = "/img/blog/Dice-Tower.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 2, Title = "Mid-Century Modern Moth Clock", Category = "Laser cutter", Date = "24. oktober 2020", ImgUrl = "/img/blog/IMG_8718.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 3, Title = "Anti-Gravity Planter", Category = "3d print", Date = "29. september 2020", ImgUrl = "/img/blog/Anti-Gravity-Planter.jpg" });
 
-                return View(blogs);
-            } 
+                BlogIndlæg blogind = new BlogIndlæg 
+                { 
+                    Title = "Collapsible Dice Holder", 
+                    Date = "30. oktober 2020", 
+                    Subheading = "Dice dice dice dice dice", 
+                    Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    ImgUrl = "/img/blog/Dice-Tower.jpg"
+                };
+
+                DetailsBlog mymodel = new DetailsBlog();
+                mymodel.BlogIndlæg = blogind;
+                mymodel.TopIndlægs = topindlægs;
+                return View(mymodel);
+            }
             else if (id == 2)
             {
-                var blogs = new Blog() { Id = id, Title = "2", Category = "Laser", Date = "1. november" };
+                List<TopIndlæg> topindlægs = new List<TopIndlæg>();
+                topindlægs.Add(new TopIndlæg { Id = 1, Title = "Collapsible Dice Holder", Category = "3d print", Date = "30. oktober 2020", ImgUrl = "/img/blog/Dice-Tower.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 2, Title = "Mid-Century Modern Moth Clock", Category = "Laser cutter", Date = "24. oktober 2020", ImgUrl = "/img/blog/IMG_8718.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 3, Title = "Anti-Gravity Planter", Category = "3d print", Date = "29. september 2020", ImgUrl = "/img/blog/Anti-Gravity-Planter.jpg" });
 
-                return View(blogs);
+                BlogIndlæg blogind = new BlogIndlæg
+                {
+                    Title = "Mid-Century Modern Moth Clock",
+                    Date = "24. oktober 2020",
+                    Subheading = "Is this even a modern moth clock?",
+                    Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    ImgUrl = "/img/blog/IMG_8718.jpg"
+                };
+
+                DetailsBlog mymodel = new DetailsBlog();
+                mymodel.BlogIndlæg = blogind;
+                mymodel.TopIndlægs = topindlægs;
+                return View(mymodel);
             }
             else if (id == 3)
             {
-                var blogs = new Blog() { Id = id, Title = "3", Category = "Laser", Date = "1. november" };
+                List<TopIndlæg> topindlægs = new List<TopIndlæg>();
+                topindlægs.Add(new TopIndlæg { Id = 1, Title = "Collapsible Dice Holder", Category = "3d print", Date = "30. oktober 2020", ImgUrl = "/img/blog/Dice-Tower.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 2, Title = "Mid-Century Modern Moth Clock", Category = "Laser cutter", Date = "24. oktober 2020", ImgUrl = "/img/blog/IMG_8718.jpg" });
+                topindlægs.Add(new TopIndlæg { Id = 3, Title = "Anti-Gravity Planter", Category = "3d print", Date = "29. september 2020", ImgUrl = "/img/blog/Anti-Gravity-Planter.jpg" });
 
-                return View(blogs);
+                BlogIndlæg blogind = new BlogIndlæg
+                {
+                    Title = "Anti-Gravity Planter",
+                    Date = "29. september 2020",
+                    Subheading = "Plants vs Zombies",
+                    Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    ImgUrl = "/img/blog/Anti-Gravity-Planter.jpg"
+                };
+
+                DetailsBlog mymodel = new DetailsBlog();
+                mymodel.BlogIndlæg = blogind;
+                mymodel.TopIndlægs = topindlægs;
+                return View(mymodel);
             }
-            else if (id == 4)
-            {
-                var blogs = new Blog() { Id = id, Title = "4", Category = "Laser", Date = "1. november" };
-
-                return View(blogs);
-            }
-
             return View();
         }
 

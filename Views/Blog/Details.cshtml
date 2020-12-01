@@ -1,12 +1,99 @@
-﻿@model MakersOfDenmark.Models.Blog
+﻿@model MakersOfDenmark.Models.DetailsBlog
 @{
-    ViewData["Title"] = Html.DisplayFor(model => model.Title);
+    ViewData["Title"] = Html.DisplayFor(model => model.BlogIndlæg.Title);
 }
 
-<h1>Details</h1>
-<dt class="col-sm-2">
-    @Html.DisplayNameFor(model => model.Title)
-</dt>
-<dd class="col-sm-10">
-    @Html.DisplayFor(model => model.Title)
-</dd>
+<div class="blog-wrapper">
+    <div class="details-blog-container">
+        <div class="details-blog-title">
+            @Html.DisplayFor(model => model.BlogIndlæg.Title)
+        </div>
+        <div class="details-blog-date">
+            @Html.DisplayFor(model => model.BlogIndlæg.Date)
+        </div>
+        <div class="details-blog-img" style="background-image: url('@Html.DisplayFor(model => model.BlogIndlæg.ImgUrl)')"></div>
+        <div class="details-blog-description">
+            @Html.DisplayFor(model => model.BlogIndlæg.Description)
+        </div>
+        <div class="details-blog-subheading">
+            @Html.DisplayFor(model => model.BlogIndlæg.Subheading)
+        </div>
+        <div class="details-blog-description">
+            @Html.DisplayFor(model => model.BlogIndlæg.Description)
+        </div>
+        <div class="details-blog-some">
+            <p>Del på</p>
+            <div>
+                <a href="#" class="si si-facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44"
+                         viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a href="#" class="si si-linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44"
+                         viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
+                <a href="#" class="si si-twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44"
+                         viewBox="0 0 24 24" stroke-width="1" stroke="#f76c6c" fill="none" stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="details-blog-divider">
+            <hr />
+        </div>
+    </div>
+
+
+        <div class="nyeste-indlæg">
+            <div>
+                <p>Nyeste indlæg</p>
+            </div>
+            <div>
+                <a asp-controller="blog" asp-action="index" class="button go-back-button">
+                    <div>Alle Indlæg </div>
+                    <div><img src="/img/arrow-8-64.png" /></div>
+                </a>
+            </div>
+        </div>
+        <div class="newest-blog-container">
+            @foreach (var item in Model.TopIndlægs)
+            {
+                <div class="blog-container">
+                    <a asp-controller="blog" asp-action="Details" asp-route-id="@item.Id">
+                        <div class="grid-item blog-top" style="background-image: url('@Html.DisplayFor(modelItem => item.ImgUrl)')">
+                            <div class="category-upper-right">
+                                @Html.DisplayFor(modelItem => item.Category)
+                            </div>
+                        </div>
+                        <div class="grid-item blog-bottom">
+                            <div class="blog-date">
+                                @Html.DisplayFor(modelItem => item.Date)
+                            </div>
+                            <div class="blog-title">
+                                @Html.DisplayFor(modelItem => item.Title)
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
