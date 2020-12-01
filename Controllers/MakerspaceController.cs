@@ -20,7 +20,7 @@ namespace MakersOfDenmark.Controllers
 
         public IActionResult Id(string id)
         {
-            var makerspace = new Models.Makerspace { Id = id };
+            var makerspace = new Models.Makerspace { Id = id, Title = "FabLab UCL", Address = "Seebladsgade 1, 5000 Odense C", Email = "fablab@ucl.dk", HeaderImage = "/img/makerspace/makerspace-header.jpg" };
             return View(makerspace);
         }
     }
