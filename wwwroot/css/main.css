@@ -398,3 +398,69 @@ main {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-bottom: 20px; }
+
+/* ------------------------------------Home -----------------------------------------*/
+.home-wrapper {
+  width: 1000px;
+  margin: 0 auto; }
+
+.home-img {
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/home/fablab-ucl.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 0 20px; }
+  .home-img .home-center-search {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .home-img .home-center-search p {
+      width: 450px;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .home-img .home-center-search input {
+      width: 450px;
+      box-sizing: border-box;
+      border: 2px solid white;
+      font-size: 16px;
+      background-image: url("/img/search-12-64.png");
+      background-position: 20px 10px;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      padding: 12px 20px 12px 50px; }
+      .home-img .home-center-search input:focus {
+        outline: none;
+        border: 2px solid; }
+
+.home-filter-container {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 250px auto;
+  height: 500px; }
+  .home-filter-container .home-filter p {
+    font-size: 20px;
+    font-weight: bold; }
+  .home-filter-container .home-filter input {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    background-image: url("/img/search-12-64.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding: 12px 20px 12px 36px;
+    margin: 10px 0; }
+    .home-filter-container .home-filter input:focus {
+      outline: none;
+      border: 2px solid; }
+  .home-filter-container .home-find-vaerksted p {
+    font-size: 20px;
+    font-weight: bold; }
