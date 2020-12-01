@@ -2,26 +2,25 @@
     <div class="left-column">
         <div class="makerspace-contact">
             <h2>Kontakt</h2>
-            <h4>FabLab UCL</h4>
-            <span>Seebladsgade 1, <br />
-                5000 Odense C</span>
+            <h4>@Model.Title</h4>
+            <span>@Model.Address</span>
             <br />
             <h4>Kontakt</h4>
-            <span>fablab@ucl.dk</span>
+            <span>@Model.Email</span>
         </div>
     </div>
     <div class="center-column">
         <div class="makerspace">
             <div class="makerspace-header">
-                <h2>FabLab UCL</h2>
+                <h2>@Model.Title</h2>
                 <div class="makerspace-header-image" style="
-                  background-image: url('/img/makerspace/makerspace-header-img.jpeg');
+                  background-image: url('@Model.HeaderImage');
                 "></div>
             </div>
             <div class="makerspace-blog">
                 <h2>Seneste blogindlæg</h2>
                 <div class="makerspace-blog-excerpt">
-                    <div class="makerspace-blog-image" style="background-image: url(/img/makerspace/blog-img.png)">
+                    <div class="makerspace-blog-image" style="background-image: url('/img/makerspace/blog-img.png')">
                     </div>
                     <div class="makerspace-blog-content">
                         <div>
