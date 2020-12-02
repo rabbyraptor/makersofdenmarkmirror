@@ -1,7 +1,80 @@
-﻿@{
+﻿@model IEnumerable<MakersOfDenmark.Models.HomeViewModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div>
-    <h1>Forside</h1>
+<div class="home-wrapper">
+    <div class="home-img">
+        <div class="home-center-search">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
+            <input type="text" placeholder="Find værksted.." />
+        </div>
+    </div>
+    <div class="home-filter-container">
+        <div class="home-filter">
+            <p>Filtrer</p>
+            <input type="text" class="filter-search" placeholder="Find værksted.." />
+            <div class="home-region">
+                <p>Region</p>
+                <div>
+                    <input type="checkbox" name="hovedstaden" value="Hovedstaden" />
+                    <label for="hovedstaden">Hovedstaden</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="sjælland" value="Sjælland" />
+                    <label for="sjælland">Sjælland</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="nordjylland" value="Nordjylland" />
+                    <label for="nordjylland">Nordjylland</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="midtjylland" value="Midtjylland" />
+                    <label for="midtjylland">Midtjylland</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="sydjylland" value="Sydjylland" />
+                    <label for="sydjylland">Sydjylland</label>
+                </div>
+            </div>
+            <label for="maskintype">Maskintype</label> <br />
+            <select name="maskintype" id="filter-maskintype">
+                <option value="all">Alle</option>
+                <option value="lasercutter">Lasercutter</option>
+                <option value="3D-printer">3D-printer</option>
+            </select> <br />
+            <label for="Spacetype">Spacetype</label> <br />
+            <select name="spacetypee">
+                <option value="all">Alle</option>
+                <option value="lasercutter">Lasercutter</option>
+                <option value="3D-printer">3D-printer</option>
+            </select>
+        </div>
+
+        <div class="home-find-vaerksted">
+            <p>Find værksted</p>
+            <div class="home-google-maps">
+            </div>
+            <div class="home-details-vaerksted">
+                @foreach (var item in Model)
+                {
+                <div class="details-vaerksted">
+                    <div class="details-vaerksted-img" style="background-image: url('@Html.DisplayFor(modelItem => item.ImgUrl)')"></div>
+                    <div>
+                        <div class="details-vaerksted-title">
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </div>
+                        <div class="details-vaerksted-address">
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </div>
+                        <div class="vaerksted-buttons">
+                            <div class="vaerksted-buttons-følg">Følg</div>
+                            <div class="vaerksted-buttons-se">Se værksted</div>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>

@@ -82,27 +82,27 @@ $blog_text: #A9A6A1;
     width: 300px;
     margin: 20px;
     box-shadow: 4px 4px 10px #888888;
+    text-decoration: none;
 
     a {
         color: black;
-
-        &:hover {
-            text-decoration: none;
-        }
+        text-decoration: none;
     }
 }
 
 .blog-top {
     position: relative;
     height: 180px;
-    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     .category-upper-right {
         position: absolute;
         right: 10px;
         top: 10px;
         font-size: 14px;
-        padding: 0 10px;
+        padding: 2px 10px;
         text-transform: uppercase;
         font-weight: bold;
         background-color: $primary_2;
@@ -127,3 +127,104 @@ $blog_text: #A9A6A1;
 }
 
 /* ------------------------------------BLOG INDLÆG -----------------------------------------*/
+
+.blog-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.details-blog-container {
+    margin: 0 0 0 20px;
+
+    .details-blog-title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .details-blog-date {
+        color: $primary_2;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .details-blog-img {
+        height: 800px;
+        margin: 20px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .details-blog-description {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .details-blog-subheading {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0 10px;
+    }
+
+    .details-blog-some {
+        display: grid;
+        grid-template-columns: 80px auto;
+        margin: 30px 0 0 0;
+
+        p {
+            color: $primary_2;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .details-blog-divider {
+        hr {
+            border-top: 2px solid #bbb;
+            border-radius: 5px;
+            margin: 20px 80px 60px;
+        }
+    }
+}
+
+.nyeste-indlæg {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+
+    p {
+        color: $blog_text;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    a {
+        position: absolute;
+        right: 0;
+        color: $primary_2;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: auto auto;
+
+
+        img {
+            height: 26px;
+            margin: 0 10px;
+        }
+    }
+}
+.newest-blog-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 20px;
+}

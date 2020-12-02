@@ -1,3 +1,187 @@
-﻿body{
-    
+﻿/* define variables for colors */
+//Dark Blue - #24305e
+//Soft red - #f76c6c
+//Soft Blue - #a8d0e6
+
+$primary_1: #24305e;
+$primary_2: #f76c6c;
+$primary_3: #a8d0e6;
+
+/* ------------------------------------Home -----------------------------------------*/
+
+.home-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.home-img {
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/home/fablab-ucl.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 0 20px;
+
+    .home-center-search {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        p {
+            width: 450px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 450px;
+            box-sizing: border-box;
+            border: 2px solid white;
+            font-size: 16px;
+            background-image: url('/img/search-12-64.png');
+            background-position: 20px 10px;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            padding: 12px 20px 12px 50px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid;
+            }
+        }
+    }
+}
+.home-filter-container {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 250px auto;
+
+    p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .home-filter {
+        .filter-search {
+            width: 200px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            font-size: 14px;
+            background-image: url('/img/search-12-64.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            background-size: 16px;
+            padding: 12px 20px 12px 36px;
+            margin: 10px 0;
+
+            &:focus {
+                outline: none;
+                border: 2px solid;
+            }
+        }
+
+        .home-region {
+            margin-bottom: 30px;
+
+            p {
+                font-size: 16px;
+            }
+
+            div {
+                margin: 10px 0;
+                display: grid;
+                grid-template-columns: 30px auto;
+
+                input {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+
+                label {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        select {
+            margin: 10px 0;
+            width: 150px;
+            height: 30px;
+        }
+    }
+
+    .home-find-vaerksted {
+        .home-google-maps {
+            position: relative;
+            background-image: url('/img/home/googlemap.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 350px;
+            margin: 10px 0;
+        }
+
+        .home-details-vaerksted {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 30px;
+
+            .details-vaerksted {
+                margin: 0 20px 20px 0;
+                height: 130px;
+                display: grid;
+                box-shadow: 4px 4px 10px #888888;
+                grid-template-columns: 120px auto;
+
+                .details-vaerksted-img {
+                    height: 130px;
+                    width: 120px;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .details-vaerksted-title {
+                    margin: 15px 15px 4px;
+                    font-weight: bold;
+                }
+
+                .details-vaerksted-address {
+                    margin: 0 15px;
+                    font-size: 14px;
+                }
+
+                .vaerksted-buttons {
+                    margin: 15px;
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    .vaerksted-buttons-følg {
+                        text-align: center;
+                        background-color: $primary_2;
+                        margin: 0 5px;
+                        padding: 3px 6px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: white;
+                    }
+
+                    .vaerksted-buttons-se {
+                        text-align: center;
+                        background-color: $primary_3;
+                        margin: 0 5px;
+                        padding: 3px 6px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }
