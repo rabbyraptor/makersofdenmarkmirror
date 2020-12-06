@@ -7,6 +7,10 @@
 }
 else
 {
+    string ImgUrl()
+    {
+        return "/img/makerspace/" + @Model.makerSpaceName.ToLower() + ".jpg";
+    }
     <div class="grid-1-2-1">
         <div class="left-column">
             <div class="makerspace-contact">
@@ -23,7 +27,8 @@ else
             <div class="makerspace">
                 <div class="makerspace-header">
                     <h2>@Model.makerSpaceName</h2>
-                    <div class="makerspace-header-image" style="background-image: url('');"></div>
+                    <div class="makerspace-header-image" style="background-image: url('@ImgUrl()');">
+                    </div>
                 </div>
                 <div class="makerspace-blog">
                     <h2>Seneste blogindlæg</h2>
