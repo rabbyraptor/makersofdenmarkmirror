@@ -88,7 +88,7 @@ namespace MakersOfDenmark.Controllers
             try
             {
                 var response = GetAllMakerspaces().Result;
-                var makerspaceIndex = response.FindIndex(x => x.makerSpaceName == id);
+                var makerspaceIndex = response.FindIndex(x => x.makerSpaceName.ToLower() == id);
                 return View(response[makerspaceIndex]);
             }
             catch (Exception e)

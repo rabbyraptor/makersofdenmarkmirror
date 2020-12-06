@@ -2,11 +2,11 @@
 
 @foreach (var makerspace in @Model)
 {
-    <a asp-controller="makerspace" asp-action="@makerspace.makerSpaceName">
+    <a asp-controller="makerspace" asp-action="@makerspace.makerSpaceName.ToLower()">
         <h3>@makerspace.makerSpaceName</h3>
     </a>
 }
 
-    @{
+@{
 
 }
