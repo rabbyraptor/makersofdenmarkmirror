@@ -58,7 +58,8 @@ namespace MakersOfDenmark
                     defaults: new { controller = "Makerspace", action = "Id" });
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/");
+                    pattern: "{controller=Home}/{action=Index}/",
+                    defaults: new { controller = "Home", action = "Index" });
             });
         }
     }
