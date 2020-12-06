@@ -1,4 +1,12 @@
 <h2>Makerspace</h2>
-<a asp-controller="makerspace" asp-action="@Model.Id">
-    <h3>Et Makerspace</h3>
-</a>
+
+@foreach (var makerspace in @Model)
+{
+    <a asp-controller="makerspace" asp-action="@makerspace.makerSpaceName">
+        <h3>@makerspace.makerSpaceName</h3>
+    </a>
+}
+
+    @{
+
+}
