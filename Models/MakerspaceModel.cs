@@ -4,10 +4,12 @@ namespace MakersOfDenmark.Models
 {
     public class Makerspace
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Address { get; set; }
-        public string Email { get; set; }
-        public string HeaderImage { get; set; }
+        public string makerSpaceId { get; set; }
+        public string makerSpaceName { get; set; }
+        public string streetName { get; set; }
+        public string streetNumber { get; set; }
+        public string city { get; set; }
+        public string zipCode { get; set; }
+        public bool isAccepted { get; set; }
     }
 }
